@@ -6,8 +6,12 @@
 </head>
 <body>
 <div class="main">
-    {{ data.title }}<br/>
-    {{ data.description }}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Update">
+    </form>
 </div>
+
 </body>
 </html>
