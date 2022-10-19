@@ -20,3 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('projectApp.urls'))
 ]
+# admin 11_admin
+# password yyyy
